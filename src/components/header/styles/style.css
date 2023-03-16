@@ -1,0 +1,10 @@
+.Fixed {
+  background: #202020 !important;
+  height: 80px !important;
+  transition: 0.3s ease-in-out;
+}
+
+/* .logo {
+  background: url('../../../images/logo.svg');
+  width: 175px;
+} */
