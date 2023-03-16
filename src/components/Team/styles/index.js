@@ -5,7 +5,7 @@ import { FiTwitter } from 'react-icons/fi';
 import { FaLinkedinIn } from 'react-icons/fa';
 
 export const TeamSection = styled('section')({
-  marginBottom: '50em',
+  minHeight: '90vh',
 });
 
 export const TeamContainer = styled('section')({
