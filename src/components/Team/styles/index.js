@@ -56,6 +56,7 @@ export const TeamContent = styled('div')({
   position: 'relative',
   zIndex: '2',
   position: 'relative',
+
   '&:before, &:after': {
     content: '""',
     width: '100%',
@@ -76,19 +77,6 @@ export const TeamContent = styled('div')({
     backgroundColor: '#f55f31',
   },
 
-  // '&:before, &:after': {
-  //   content: '""',
-  //   width: '100%',
-  //   height: '0px',
-  //   backgroundColor: 'red',
-  //   position: 'absolute',
-  //   bottom: '0',
-  //   left: '0',
-  //   transition: '0.4s ease-in-out',
-  //   zIndex: '-1',
-  //   borderRadius: 'inherit',
-  // },
-
   '&:after': {
     zIndex: '-2',
   },
@@ -101,6 +89,10 @@ export const TeamContent = styled('div')({
     backgroundColor: 'white',
     clipPath: 'polygon(50% 100%, 0 0, 100% 0)',
     borderRadius: '0',
+  },
+  ':hover': {
+    color: 'white !important',
+    transition: '.5s',
   },
 });
 
@@ -150,10 +142,13 @@ export const StyledSocials = styled('div')({
   justifyContent: 'space-between',
   alignItems: 'center',
   minHeight: '70px',
+  ':hover': {
+    color: 'white !important',
+    transition: '.5s',
+  },
 });
 
 const sharedStylesSocials = {
-  color: '#2d3436',
   fontSize: '1.5em',
 };
 
