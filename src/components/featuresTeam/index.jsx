@@ -9,7 +9,7 @@ const FeaturesTeam = () => {
         const { id, image, title, paragraph } = singleFeature;
         return (
           <SingleBox key={id}>
-            <FeaturesImage image={image} />
+            <FeaturesImage src={image} />
             <StyledH4>{title}</StyledH4>
             <p>{paragraph}</p>
           </SingleBox>

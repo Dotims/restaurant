@@ -142,14 +142,21 @@ export const StyledSocials = styled('div')({
   justifyContent: 'space-between',
   alignItems: 'center',
   minHeight: '70px',
+  transition: '.5s',
   ':hover': {
     color: 'white !important',
-    transition: '.5s',
   },
 });
 
 const sharedStylesSocials = {
-  fontSize: '1.5em',
+  fontSize: '2.5em',
+  padding: '5px',
+  transition: '.5s',
+  ':hover': {
+    cursor: 'pointer',
+    border: '2px solid white',
+    borderRadius: '50%',
+  },
 };
 
 export const StyledCiFacebook = styled(CiFacebook)(sharedStylesSocials);

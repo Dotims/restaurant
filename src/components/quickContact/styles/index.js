@@ -13,11 +13,12 @@ export const WrapperQuickContact = styled('section')({
 export const SingleCardQContact = styled('div')({
   color: 'black',
   padding: '1.5em',
+  width: '25%',
   boxShadow: '2px 2px 10px #757371',
 });
 
 export const StyledH3 = styled('h3')({
-  fontSize: '2em',
+  fontSize: '1.7em',
 });
 
 export const StyledP = styled('p')({

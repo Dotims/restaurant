@@ -2,9 +2,5 @@
   background: #202020 !important;
   height: 80px !important;
   transition: 0.3s ease-in-out;
+  width: 100%;
 }
-
-/* .logo {
-  background: url('../../../images/logo.svg');
-  width: 175px;
-} */

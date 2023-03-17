@@ -5,6 +5,7 @@ export const Features = styled('section')({
   marginRight: 'auto',
   width: '75%',
   minHeight: '35vh',
+  marginBottom: '5em',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',

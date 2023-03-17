@@ -33,4 +33,5 @@ export const StyledH1 = styled('h1')({
 
 export const Contactsection = styled('section')({
   color: '#e96a43',
+  minHeight: '60vh',
 });
