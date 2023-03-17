@@ -8,6 +8,10 @@ import Accordion from './components/accordion/index';
 import Menu from './pages/menu/index';
 import QualityFood from './components/QualityFood/index';
 import About from './pages/about/index';
+import QuickContact from './components/quickContact/index';
+import Footer from './components/footer/index';
+import LinkCantact from './components/linkContact/index';
+import Contact from './pages/contact/index';
 
 function App() {
   return (
@@ -25,12 +29,16 @@ function App() {
                 <Dishes />
                 <Accordion />
                 <QualityFood />
+                <QuickContact />
+                <LinkCantact />
               </>
             }
           />
           <Route path='/Menu' element={<Menu />} />
           <Route path='/Onas' element={<About />} />
+          <Route path='/kontakt' element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -1,5 +1,4 @@
 import { React } from 'react';
-// import HeroImg from '../../images/hero.jpg';
 import './styles/style.css';
 import {
   StyledImgHero,

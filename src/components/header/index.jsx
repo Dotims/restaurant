@@ -46,7 +46,7 @@ const Header = () => {
           <StyledLink to='/Menu'>Menu</StyledLink>
         </StyledNavLi>
         <StyledNavLi>
-          <StyledLink to='/contact'>Kontakt</StyledLink>
+          <StyledLink to='/kontakt'>Kontakt</StyledLink>
         </StyledNavLi>
       </StyledNav>
     </StyledHeader>

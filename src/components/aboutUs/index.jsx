@@ -10,11 +10,13 @@ import {
   LineDescription,
   ReviewWrapper,
   ImgRestaurant,
+  ButtonAbout,
 } from './styles/index';
 // import about from '../../images/about.jpg';
 // import aboutS from '../../images/about2.jpg';
 import restaurant from '../../images/restaurant.jpg';
 import Reviews from './reviews';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -32,6 +34,9 @@ const AboutUs = () => {
             odwiedzenia naszej restauracji i delektowania się naszymi daniami,
             które na pewno zostaną na długo w Państwa pamięci.
           </Description>
+          <Link to='/onas'>
+            <ButtonAbout>Zobacz Więcej!</ButtonAbout>
+          </Link>
           <LineDescription>
             <ImgRestaurant src={restaurant} />
           </LineDescription>

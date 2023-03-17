@@ -1,7 +1,7 @@
 const DataFeatures = [
   {
     id: 1,
-    image: '/images/features1.png',
+    image: './images/menuSzejk1.png',
     title: 'Najlepsza Jakość',
     paragraph: 'Najwyższa jakość smakuje u nas doskonale!',
   },

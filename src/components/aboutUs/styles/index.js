@@ -70,3 +70,19 @@ export const ImgRestaurant = styled('img')({
   filter: 'brightness(75%)',
   borderRadius: '25px',
 });
+
+export const ButtonAbout = styled('button')({
+  padding: '12px',
+  fontWeight: '800',
+  border: 'none',
+  borderRadius: '10px',
+  background: '#ed4f24',
+  position: 'relative',
+  top: '10px',
+  color: 'white',
+  '&:hover': {
+    background: '#e96a43',
+    transition: '.4s',
+    cursor: 'pointer',
+  },
+});

@@ -1,6 +1,6 @@
 import { styled } from '@mui/material';
 
-export const AboutHero = styled('section')({
+export const ContactHero = styled('section')({
   height: '45vh',
   backgroundImage: 'url(./images/bgAbout.jpg)',
   backgroundPosition: 'center center',
@@ -9,32 +9,28 @@ export const AboutHero = styled('section')({
   backgroundSize: 'cover',
 });
 
-export const ContainerHero = styled('div')({
+export const InfoHero = styled('div')({
+  width: '60%',
+  height: '100%',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  width: '55%',
-  height: '100%',
 });
 
 export const WrapperHero = styled('div')({
   color: 'white',
+  textAlign: 'left',
+});
+
+export const ContentHero = styled('div')({
+  color: 'white',
+  display: 'block',
 });
 
 export const StyledH1 = styled('h1')({
   color: '#e96a43',
-  textAlign: 'left',
-  fontWeight: '900',
-});
-
-export const MainContent = styled('main')({
-  width: '100%',
-});
-
-export const TeamWrapper = styled('div')({
-  width: '100%',
 });
 
 export const Contactsection = styled('section')({
-  width: '100%',
+  color: '#e96a43',
 });

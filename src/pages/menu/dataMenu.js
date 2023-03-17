@@ -92,7 +92,7 @@ const menu = [
     title: 'Szejk jagodowy',
     category: 'szejki',
     price: 16.99,
-    img: 'https://przemiksy.pl/wp-content/uploads/2018/04/koktajl-bialkowy-z-jagodami.jpg',
+    img: './images/menuSzejk1.png',
     desc: `Szejk jagodowy z mlekiem sojowym i musem z jagód.`,
   },
   {
