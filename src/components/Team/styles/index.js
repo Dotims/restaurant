@@ -142,7 +142,7 @@ export const StyledSocials = styled('div')({
   justifyContent: 'space-between',
   alignItems: 'center',
   minHeight: '70px',
-  transition: '.5s',
+  transition: '.4s',
   ':hover': {
     color: 'white !important',
   },
@@ -151,7 +151,7 @@ export const StyledSocials = styled('div')({
 const sharedStylesSocials = {
   fontSize: '2.5em',
   padding: '5px',
-  transition: '.5s',
+  transition: '.4s',
   ':hover': {
     cursor: 'pointer',
     border: '2px solid white',

@@ -15,7 +15,7 @@ const QuickContact = () => {
       {quickContactData.map((contactInfo) => {
         const { id, heading, fisrtData, secoundData } = contactInfo;
         return (
-          <SingleCardQContact>
+          <SingleCardQContact key={id}>
             <StyledH3>{heading}</StyledH3>
             <DataDesc>
               <StyledP>{fisrtData}</StyledP>

@@ -8,16 +8,15 @@ import {
   StyledLogoImg,
   StyledLink,
   StyledHamburger,
-  StyledNavMobile,
+  StyledNavUl,
+  StyledBurger,
 } from './styles';
 import Logo from '../../images/logo.svg';
-import './styles/style.css';
 import Hamburger from 'hamburger-react';
 
 const Header = () => {
   const [fixed, setIsFixed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,43 +30,39 @@ const Header = () => {
     };
   }, []);
 
+  const handleToggle = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
-    <StyledHeader className={fixed ? 'Fixed' : ''}>
+    <StyledHeader fixed={fixed} className={fixed ? 'fixed' : ''}>
       <StyledLogo>
         <StyledLink to='/'>
           <StyledLogoImg src={Logo} />
         </StyledLink>
       </StyledLogo>
-      {/* <StyledHamburger toggled={isOpen} toggle={setIsOpen} /> */}
-      <StyledNav isOpen={isOpen}>
-        <StyledNavLi>
-          <StyledLink to='/'>Główna</StyledLink>
-        </StyledNavLi>
-        <StyledNavLi>
-          <StyledLink to='Onas'>o nas</StyledLink>
-        </StyledNavLi>
-        <StyledNavLi>
-          <StyledLink to='/Menu'>Menu</StyledLink>
-        </StyledNavLi>
-        <StyledNavLi>
-          <StyledLink to='/kontakt'>Kontakt</StyledLink>
-        </StyledNavLi>
+      <StyledBurger>
+        <Hamburger className='halo' toggled={isOpen} toggle={handleToggle} />
+      </StyledBurger>
+      <StyledNav isOpen={isOpen} className={isOpen ? 'open' : ''}>
+        <StyledBurger>
+          <Hamburger className='halo' toggled={isOpen} toggle={handleToggle} />
+        </StyledBurger>
+        <StyledNavUl>
+          <StyledNavLi>
+            <StyledLink to='/'>Główna</StyledLink>
+          </StyledNavLi>
+          <StyledNavLi>
+            <StyledLink to='Onas'>o nas</StyledLink>
+          </StyledNavLi>
+          <StyledNavLi>
+            <StyledLink to='/Menu'>Menu</StyledLink>
+          </StyledNavLi>
+          <StyledNavLi>
+            <StyledLink to='/kontakt'>Kontakt</StyledLink>
+          </StyledNavLi>
+        </StyledNavUl>
       </StyledNav>
-
-      <StyledNavMobile sOpen={isOpen}>
-        <StyledNavLi>
-          <StyledLink to='/'>Główna</StyledLink>
-        </StyledNavLi>
-        <StyledNavLi>
-          <StyledLink to='Onas'>o nas</StyledLink>
-        </StyledNavLi>
-        <StyledNavLi>
-          <StyledLink to='/Menu'>Menu</StyledLink>
-        </StyledNavLi>
-        <StyledNavLi>
-          <StyledLink to='/kontakt'>Kontakt</StyledLink>
-        </StyledNavLi>
-      </StyledNavMobile>
     </StyledHeader>
   );
 };

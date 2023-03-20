@@ -19,6 +19,7 @@ export const FormContainer = styled('form')({
   border: '1px solid #ccc',
   borderRadius: '8px',
   boxShadow: '2px 2px 10px #636e72',
+  fontFamily: 'Poppins, sans-serif !important',
 });
 
 export const InputContainer = styled('div')({
@@ -26,17 +27,16 @@ export const InputContainer = styled('div')({
   gridTemplateColumns: '1fr 1fr',
   gap: '1rem',
   width: '100%',
-  fontFamily: 'Poppins, sans-serif !important',
 });
 
 export const InputField = styled(TextField)({
   width: '100%',
+  fontFamily: 'Poppins, sans-serif !important',
 });
 
 export const SelectField = styled(Select)({
   width: '100%',
   color: 'black !important',
-  fontFamily: 'Poppins, sans-serif !important',
 });
 
 export const MessageField = styled(TextareaAutosize)({
@@ -45,7 +45,7 @@ export const MessageField = styled(TextareaAutosize)({
   border: '1px solid #ccc',
   borderRadius: '4px',
   minHeight: '150px',
-  fontFamily: 'Poppins, sans-serif',
+  fontFamily: 'Poppins, sans-serif !important',
   fontSize: '18px',
   resize: 'none',
   '&:focus': {
