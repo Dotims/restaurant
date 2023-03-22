@@ -9,6 +9,7 @@ export const QualitySection = styled('section')({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  paddingBottom: '4em',
 });
 
 export const QualityWrapper = styled('div')({
@@ -27,9 +28,16 @@ export const StyledHeading = styled('div')({
 });
 
 export const Cards = styled('div')({
-  display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  '@media (min-width: 320px)': {
+    width: '100%',
+    display: 'block',
+  },
+
+  '@media (min-width: 1024px)': {
+    display: 'flex',
+  },
 });
 
 export const SingleCard = styled('div')({
@@ -37,14 +45,25 @@ export const SingleCard = styled('div')({
   color: 'white',
   padding: '0 2em',
   transition: '.5s',
-  ':hover img': {
-    transform: 'rotateY(180deg)',
+
+  '@media (min-width: 320px)': {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '90%',
   },
-  ':nth-of-type(1)': {
-    borderRight: '1px dashed white',
-  },
-  ':nth-of-type(2)': {
-    borderRight: '1px dashed white',
+  '@media (min-width: 1024px)': {
+    marginLeft: '0',
+    marginRight: '0',
+    width: '25%',
+    ':hover img': {
+      transform: 'rotateY(180deg)',
+    },
+    ':nth-of-type(1)': {
+      borderRight: '1px dashed white',
+    },
+    ':nth-of-type(2)': {
+      borderRight: '1px dashed white',
+    },
   },
 });
 
@@ -56,9 +75,24 @@ export const StyledH4 = styled('h4')({
   textAlign: 'center',
   fontSize: '1.8em',
   padding: '.5em',
+  '@media (min-width: 320px)': {
+    fontSize: '1.5em',
+  },
+  '@media (min-width: 640px)': {
+    fontSize: '1.4em',
+  },
+  '@media (min-width: 1280px)': {
+    fontSize: '1.8em',
+  },
 });
 
 export const StyledImg = styled('img')({
   padding: '.5em',
   transition: '.5s',
+  '@media (min-width: 320px)': {
+    // width: '125px',
+  },
+  '@media (min-width: 640px)': {
+    width: 'none',
+  },
 });

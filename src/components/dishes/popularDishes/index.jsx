@@ -11,12 +11,14 @@ import '../../../images/menubg.jpg';
 import './styles/style.css';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useMediaQuery } from '@mui/material';
 
 import 'swiper/swiper.min.css';
 
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
 const PopularDishes = () => {
+  const isSmallScreen = useMediaQuery('(max-width: 1500px)');
   return (
     <DishesWrapper className='menuBg'>
       <HeaderDishes>
@@ -28,7 +30,7 @@ const PopularDishes = () => {
       <div className='swiperWrapper'>
         <Swiper
           spaceBetween={80}
-          slidesPerView={3}
+          slidesPerView={isSmallScreen ? 1 : 3}
           className='swiperBox'
           initialSlide={2}
           loop={true}
@@ -43,7 +45,6 @@ const PopularDishes = () => {
           }}
           modules={[Autoplay, Pagination]}
         >
-          {/* <SwiperSlide className='SlideWrapper startSlide'></SwiperSlide> */}
           <SwiperSlide className='SlideWrapper'>
             <div className='firstSlide slides'>
               <SpanSLideTitle>Pizza Włoska</SpanSLideTitle>

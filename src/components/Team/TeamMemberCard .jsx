@@ -9,6 +9,9 @@ import {
   StyledName,
 } from './styles/index';
 import TeamData from './TeamData';
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useMediaQuery } from '@mui/material';
 
 const TeamMemberCard = () => {
   return TeamData.map((singlePerson) => {

@@ -3,6 +3,12 @@ import { styled } from '@mui/material';
 export const ReviewsWrapper = styled('div')({
   height: '300px',
   marginBottom: '30em',
+  '@media (min-width: 320px)': {
+    width: '100%',
+  },
+  '@media (min-width: 724px)': {
+    width: '90%',
+  },
 });
 
 export const TitleReviews = styled('div')({
@@ -23,6 +29,12 @@ export const H1Reviews = styled('h1')({
   letterSpacing: '3px',
   color: '#e96a43',
   textAlign: 'center',
+  '@media (min-width: 320px)': {
+    fontSize: '21px',
+  },
+  '@media (min-width: 724px)': {
+    fontSize: '32px',
+  },
 });
 
 export const MainContent = styled('main')({});

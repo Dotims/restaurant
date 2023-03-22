@@ -1,15 +1,20 @@
 import { styled } from '@mui/material';
 
 export const DescTeamSection = styled('section')({
-  width: '80%',
+  width: '90%',
   marginLeft: 'auto',
   marginRight: 'auto',
-  display: 'flex',
   minHeight: '40vh',
+  '@media (min-width: 320px)': {
+    display: 'block',
+  },
+  '@media (min-width: 1024px)': {
+    display: 'flex',
+  },
 });
 
 export const DescTeamwrapper = styled('div')({
-  width: '50%',
+  width: '90%',
   textAlign: 'left',
 });
 
@@ -28,5 +33,5 @@ export const ImageDesc = styled('div')({
   backgroundSize: 'contain',
   position: 'relative',
   top: '-4em',
-  width: '50%',
+  width: '80%',
 });

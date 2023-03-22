@@ -30,8 +30,12 @@ export const StyledH1 = styled('h1')({
 
 export const OurTeamWrapper = styled('div')({
   width: '100%',
-  display: 'flex',
+
   gap: '2.5em',
+  '@media (min-width: 320px)': {
+    display: 'grid',
+  },
+  '@media (min-width: 640px)': { display: 'flex' },
 });
 
 export const TeamImg = styled('div')({

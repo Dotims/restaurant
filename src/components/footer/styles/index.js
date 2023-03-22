@@ -13,8 +13,14 @@ export const Styledfooter = styled('footer')({
 });
 
 export const LogoImg = styled('img')({
-  width: '18em',
-  margin: '2em',
+  '@media (min-width: 320px)': {
+    width: '13em',
+    margin: '2em',
+  },
+  '@media (min-width: 640px)': {
+    width: '18em',
+    margin: '2em',
+  },
 });
 
 export const FooterSocials = styled('div')({
@@ -48,18 +54,28 @@ export const StyledRight = styled('div')({
 });
 
 export const StyledP = styled('p')({
-  width: '100%',
-  fontSize: '18px',
+  padding: '0px 0 25px 0',
   color: 'white',
   marginBottom: '0px',
+  '@media (min-width: 320px)': {
+    fontSize: '15px',
+  },
+  '@media (min-width: 640px)': {
+    fontSize: '18px',
+  },
 });
 
 export const StyledSpan = styled('span')({
-  paddingLeft: '25px',
-  paddingRight: '25px',
-  ':nth-of-type(2)': {
-    borderRight: '2px solid var(--mainColor)',
-    borderLeft: '2px solid var(--mainColor)',
+  '@media (min-width: 320px)': {
+    display: 'block',
+  },
+  '@media (min-width: 640px)': {
+    paddingLeft: '25px',
+    paddingRight: '25px',
+    ':nth-of-type(2)': {
+      borderRight: '2px solid var(--mainColor)',
+      borderLeft: '2px solid var(--mainColor)',
+    },
   },
 });
 
@@ -71,9 +87,20 @@ export const Styledinfo = styled('div')({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-around',
-  fontSize: '18px',
   color: 'white',
   marginBottom: '0px',
+  '@media (min-width: 320px)': {
+    fontSize: '16px',
+    display: 'block',
+    width: '100%',
+    height: '6em',
+  },
+  '@media (min-width: 640px)': {
+    display: 'flex',
+    height: '50px',
+    width: '50%',
+    fontSize: '18px',
+  },
 });
 
 export const ColorLogo = styled('span')({

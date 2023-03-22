@@ -69,3 +69,52 @@
 .seventhSlide {
   background-image: url('../../../../images/specialMenu7.jpg');
 }
+
+@media (min-width: 320px) {
+  .swiperBox {
+    width: 95%;
+  }
+  .slides {
+    border: 3px solid white;
+    height: 400px;
+    width: 300px;
+    background-attachment: fixed;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 375px) {
+  .swiperBox {
+    width: 80%;
+  }
+}
+@media (min-width: 425px) {
+  .swiperBox {
+    width: 75%;
+  }
+}
+
+@media (min-width: 640px) {
+  .swiperBox {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiperBox {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .swiperBox {
+    width: 60%;
+  }
+  .slides {
+    height: 400px;
+    width: 325px;
+  }
+}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const StyledHeader = styled('header')(({ fixed }) => ({
   position: fixed ? 'fixed' : 'fixed',
-  right: '0',
+  left: '0',
   top: '0',
   display: 'flex',
   alignItems: 'center',
@@ -11,10 +11,10 @@ export const StyledHeader = styled('header')(({ fixed }) => ({
   height: '120px',
   transition: '0.3s ease-in-out',
   justifyContent: 'space-around',
-  zIndex: '9999',
+  zIndex: '99999',
+  transition: '.6s',
   '&.fixed': {
     background: '#202020',
-    transition: '.6s',
     height: '100px',
   },
 }));
@@ -24,9 +24,9 @@ export const StyledNav = styled('nav')(({ isOpen }) => ({
   listStyle: 'none',
   height: '100%',
   justifyContent: 'center',
+  alignItems: 'center',
   transition: '.6s',
   transform: isOpen ? 'translateX(100)' : 'translateX(0)',
-  alignItems: 'center',
   zIndex: '10',
   '@media (min-width: 320px)': {
     position: 'fixed',
@@ -72,10 +72,17 @@ export const StyledNavLi = styled('li')({
   justifyContent: 'center',
   '@media (min-width: 320px)': {
     padding: '30px  0',
+    fontSize: '15px',
   },
   '@media (min-width: 768px)': {
     padding: '0',
     marginTop: '0',
+    fontSize: '15px',
+  },
+  '@media (min-width: 1024px)': {
+    padding: '0',
+    marginTop: '0',
+    fontSize: '18px',
   },
 });
 
@@ -97,10 +104,18 @@ export const StyledLink = styled(Link)({
 export const StyledLogo = styled('div')({
   display: 'flex',
   width: '30%',
+  '@media (min-width: 320px)': {
+    width: '0%',
+  },
 });
 
 export const StyledLogoImg = styled('img')({
-  width: '175px',
+  '@media (min-width: 320px)': {
+    width: '135px',
+  },
+  '@media (min-width: 640px)': {
+    width: '175px',
+  },
 });
 
 export const StyledBurger = styled('div')({
