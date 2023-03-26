@@ -6,6 +6,7 @@ import {
   StyledH1,
   MainContent,
   TeamWrapper,
+  StyledP,
 } from './styles/index';
 import Team from '../../components/Team/index';
 import TeamDesc from './../../components/TeamDesc/index';
@@ -18,7 +19,9 @@ function About() {
         <ContainerHero>
           <WrapperHero>
             <StyledH1>Nasz Zespół</StyledH1>
-            <p>Nasza utalentowana ekipa z pasją do gotowania i obsługi gości</p>
+            <StyledP>
+              Nasza utalentowana ekipa z pasją do gotowania i obsługi gości
+            </StyledP>
           </WrapperHero>
         </ContainerHero>
       </AboutHero>

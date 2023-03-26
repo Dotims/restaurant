@@ -3,7 +3,6 @@ import { styled } from '@mui/material';
 export const Features = styled('section')({
   marginLeft: 'auto',
   marginRight: 'auto',
-
   minHeight: '35vh',
   marginBottom: '5em',
   alignItems: 'center',
@@ -20,7 +19,8 @@ export const Features = styled('section')({
 
 export const SingleBox = styled('div')({
   display: 'block',
-
+  marginLeft: 'auto',
+  marginRight: 'auto',
   '@media (min-width: 320px)': {
     width: '90%',
   },

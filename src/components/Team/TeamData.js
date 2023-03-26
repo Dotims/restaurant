@@ -54,18 +54,30 @@ const TeamData = [
       <StyledFaLinkedinIn key={4} />,
     ],
   },
-  // {
-  //   id: 5,
-  //   image: './images/personTeam5.jpg',
-  //   name: 'John Center',
-  //   profession: 'Kelner',
-  // },
-  // {
-  //   id: 6,
-  //   image: './images/personTeam6.jpg',
-  //   name: 'John Center',
-  //   profession: 'Kelner',
-  // },
+  {
+    id: 5,
+    image: './images/personTeam5.jpg',
+    name: 'Robert Makłowicz',
+    profession: 'Kelner',
+    socials: [
+      <StyledCiFacebook key={1} />,
+      <StyledAiOutlineInstagram key={2} />,
+      <StyledFiTwitter key={3} />,
+      <StyledFaLinkedinIn key={4} />,
+    ],
+  },
+  {
+    id: 6,
+    image: './images/personTeam6.jpg',
+    name: 'Adrian Makumba',
+    profession: 'Kucharz',
+    socials: [
+      <StyledCiFacebook key={1} />,
+      <StyledAiOutlineInstagram key={2} />,
+      <StyledFiTwitter key={3} />,
+      <StyledFaLinkedinIn key={4} />,
+    ],
+  },
 ];
 
 export default TeamData;

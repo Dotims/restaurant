@@ -6,6 +6,7 @@ import {
   StyledSpan,
   TitleMenu,
   MainContent,
+  BackToAll,
 } from './styles/index';
 import './styles/style.css';
 import Categories from './categories';
@@ -16,6 +17,8 @@ const allCategories = [
   'Wszystko',
   ...new Set(items.map((item) => item.category)),
 ];
+
+const BacktoAllCategories = ['Wszystko'];
 
 function Menu() {
   const [menuItems, setMenuItems] = useState(items);
@@ -56,9 +59,10 @@ function Menu() {
       </MainContent>
       <Categories
         filterItems={filterItems}
-        categories={categories}
+        categories={BacktoAllCategories}
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
+        className='second-categories'
       />
     </MenuSection>
   );

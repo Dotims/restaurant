@@ -7,9 +7,11 @@ export const DescTeamSection = styled('section')({
   minHeight: '40vh',
   '@media (min-width: 320px)': {
     display: 'block',
+    marginTop: '4em',
   },
   '@media (min-width: 1024px)': {
     display: 'flex',
+    marginTop: '0',
   },
 });
 
@@ -24,6 +26,12 @@ export const StyledH2 = styled('h2')({
   alignItems: 'start',
   justifyContent: 'flex-start',
   marginBottom: '.6em',
+  '@media (min-width: 320px)': {
+    fontSize: '2em',
+  },
+  '@media (min-width: 724px)': {
+    fontSize: '4em',
+  },
 });
 
 export const ImageDesc = styled('div')({

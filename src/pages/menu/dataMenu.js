@@ -5,7 +5,7 @@ const menu = [
     category: 'śniadanie',
     price: 15.99,
     img: 'https://e-przepisykulinarne.pl/wp-content/uploads/2012/04/tost_boczek_jajko-1200x900.jpg',
-    desc: `Złocista jajecznica połączona z chrupiącym boczkiem i tostami stanowi smaczne i pożywne danie, które zaspokoi głód na długi czas.`,
+    desc: `Złocista jajecznica połączona z chrupiącym boczkiem i tostami stanowi smaczne i pożywne danie.`,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const menu = [
     category: 'obiad',
     price: 13.99,
     img: 'https://www.przyslijprzepis.pl/media/cache/big/uploads/media/recipe/0005/88/7090c2bfb5438fca6c393a263224b7988dcb1be7.jpeg',
-    desc: `Kotlet, chrupiące warzywa i ser, a także złociste frytki tworzą połączenie, które zadowoli podniebienia nawet najbardziej wybrednych smakoszy.`,
+    desc: `Kotlet, chrupiące warzywa i ser, a także złociste frytki tworzą połączenie.`,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const menu = [
     category: 'kolacja',
     price: 6.99,
     img: 'https://i0.wp.com/blogzapetytem.pl/wp-content/uploads/2019/06/5B8F1E3C-B900-4A20-956B-847DDF0F9F9F.jpeg?fit=2048%2C1552&ssl=1',
-    desc: `Risotto z krewetkami i szparagami to danie kuchni włoskiej, które charakteryzuje się kremową konsystencją i wyrazistym smakiem.`,
+    desc: `Risotto z krewetkami i szparagami to danie kuchni włoskiej.`,
   },
   {
     id: 4,
@@ -101,7 +101,7 @@ const menu = [
     category: 'śniadanie',
     price: 8.99,
     img: 'http://2.bp.blogspot.com/-NB6nlS4ew8s/VL1KvgjfjOI/AAAAAAAAD20/nqe7jUCfE1A/s1600/IS_DSC_3016%2Bna%2Bbloga.jpg',
-    desc: `Croissanty z jajkiem, szynką i serem to smaczny i pożywny wybór który łączy w sobie chrupiący croissantów z jajkiem, szynką i serem.`,
+    desc: `Croissanty z jajkiem, szynką i serem to smaczny i pożywny wybór.`,
   },
   {
     id: 14,
@@ -109,7 +109,7 @@ const menu = [
     category: 'obiad',
     price: 21.99,
     img: 'https://media.centrumrespo.pl/wp-content/uploads/2018/10/18002231/kurczakbok.png',
-    desc: `Tagliatelle z krewetkami i szparagami to danie kuchni włoskiej, w którym połączenie krewetek i delikatnych szparagów tworzy niezapomniany smak.`,
+    desc: `Tagliatelle z krewetkami i szparagami to danie kuchni włoskiej, w którym połączenie krewetek i delikatnych szparagów.`,
   },
   {
     id: 15,

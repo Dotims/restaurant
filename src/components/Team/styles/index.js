@@ -3,6 +3,7 @@ import { CiFacebook } from 'react-icons/ci';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { FiTwitter } from 'react-icons/fi';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const TeamSection = styled('section')({
   minHeight: '90vh',
@@ -17,6 +18,7 @@ export const TeamContainer = styled('section')({
 
 export const TeamWrapper = styled('div')({
   display: 'block',
+  width: '100%',
 });
 
 export const HeadingTeam = styled('div')({
@@ -25,17 +27,26 @@ export const HeadingTeam = styled('div')({
 
 export const StyledH1 = styled('h1')({
   fontSize: '4em',
+  marginTop: '1.5em',
   color: '#e96a43',
+  '@media (min-width: 320px)': {
+    fontSize: '2em',
+  },
+  '@media (min-width: 724px)': {
+    fontSize: '4em',
+  },
 });
 
 export const OurTeamWrapper = styled('div')({
   width: '100%',
-
   gap: '2.5em',
+  marginLeft: 'auto',
+  marginRight: 'auto',
   '@media (min-width: 320px)': {
     display: 'grid',
   },
-  '@media (min-width: 640px)': { display: 'flex' },
+  '@media (min-width: 425px)': { display: 'flex', width: '100%' },
+  '@media (min-width: 1500px)': { width: '80%' },
 });
 
 export const TeamImg = styled('div')({
@@ -105,6 +116,7 @@ export const SingleCardsTeam = styled('div')({
   height: '150px',
   position: 'relative',
   textAlign: 'center',
+
   ':before': {
     content: "''",
     width: '85%',
@@ -171,3 +183,33 @@ export const StyledAiOutlineInstagram =
 export const StyledFiTwitter = styled(FiTwitter)(sharedStylesSocials);
 
 export const StyledFaLinkedinIn = styled(FaLinkedinIn)(sharedStylesSocials);
+
+export const StyledSwiper = styled(Swiper)({
+  minHeight: '65vh',
+  '@media (min-width: 320px)': {
+    width: '100%',
+  },
+  '@media (min-width: 640px)': {
+    width: '50%',
+  },
+  '@media (min-width: 860px)': {
+    width: '30%',
+  },
+  '@media (min-width: 1280px)': {
+    width: '20%',
+  },
+  '@media (min-width: 1500px)': {
+    width: '83%',
+  },
+});
+
+export const StyledSwiperSlide = styled(SwiperSlide)({
+  '@media (min-width: 320px)': {
+    width: '100%',
+    padding: '0',
+    margin: '0',
+  },
+  '@media (min-width: 1280px)': {
+    width: '80%',
+  },
+});

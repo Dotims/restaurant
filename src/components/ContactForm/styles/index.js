@@ -20,6 +20,12 @@ export const FormContainer = styled('form')({
   borderRadius: '8px',
   boxShadow: '2px 2px 10px #636e72',
   fontFamily: 'Poppins, sans-serif !important',
+  '@media (min-width: 320px)': {
+    width: '90%',
+  },
+  '@media (min-width: 720px)': {
+    width: '55%',
+  },
 });
 
 export const InputContainer = styled('div')({

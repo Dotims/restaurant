@@ -1,3 +1,5 @@
+import { AiOutlineHome } from 'react-icons/ai';
+
 const quickContactData = [
   {
     id: 1,

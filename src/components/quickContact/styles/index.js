@@ -34,7 +34,7 @@ export const SingleCardQContact = styled('div')({
     margin: '2em 0',
   },
 
-  '@media (min-width: 1280px)': {
+  '@media (min-width: 1750px)': {
     width: '25%',
     margin: '0',
   },

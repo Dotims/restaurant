@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import {
   DishesWrapper,
   HeaderDishes,
@@ -11,14 +11,13 @@ import '../../../images/menubg.jpg';
 import './styles/style.css';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useMediaQuery } from '@mui/material';
-
 import 'swiper/swiper.min.css';
-
 import { Autoplay, Pagination, Navigation } from 'swiper';
+import { useMediaQuery } from '@mui/material';
 
 const PopularDishes = () => {
   const isSmallScreen = useMediaQuery('(max-width: 1500px)');
+
   return (
     <DishesWrapper className='menuBg'>
       <HeaderDishes>

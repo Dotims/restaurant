@@ -18,11 +18,29 @@ export const StyledWrapper = styled('div')({
   color: 'white',
   fontSize: '4em',
   fontWeight: '900',
+  '@media (min-width: 320px)': {
+    top: '3em',
+    fontSize: '2.2em',
+  },
+  '@media (min-width: 720px)': {
+    top: '1.8em',
+    fontSize: '2.5em',
+  },
 });
 
 export const TitleMenu = styled('h1')({
   width: '100%',
   filter: 'brightness(100%)',
+  '@media (min-width: 320px)': {
+    top: '3em',
+    fontSize: '1.5em',
+    fontWeight: '600',
+  },
+  '@media (min-width: 720px)': {
+    top: '1.8em',
+    fontSize: '2.5em',
+    fontWeight: '900',
+  },
 });
 
 export const StyledSpan = styled('span')({
@@ -34,4 +52,13 @@ export const MainContent = styled('article')({
   marginRight: 'auto',
   color: 'black',
   width: '70%',
+});
+
+export const BackToAll = styled('span')({
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  width: '150px',
+  height: '100px',
+  display: 'flex',
+  cursor: 'pointer',
 });
